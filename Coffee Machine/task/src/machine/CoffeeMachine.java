@@ -11,17 +11,17 @@ public class CoffeeMachine {
     private static int milk = 540;    // ml
     private static int beans = 120;   // grams
     private static int cups = 9;      // disposable cups
-    private static final int waterPerEspresso = 250;
-    private static final int beansPerEspresso = 16;
-    private static final int costPerEspresso = 4;
-    private static final int waterPerLatte = 350;
-    private static final int milkPerLatte = 75;
-    private static final int beansPerLatte = 20;
-    private static final int costPerLatte = 7;
-    private static final int waterPerCappuccino = 200;
-    private static final int milkPerCappuccino = 100;
-    private static final int beansPerCappuccino = 12;
-    private static final int costPerCappuccino = 6;
+    private static final int WATER_PER_ESPRESSO = 250;
+    private static final int BEANS_PER_ESPRESSO = 16;
+    private static final int COST_PER_ESPRESSO = 4;
+    private static final int WATER_PER_LATTE = 350;
+    private static final int MILK_PER_LATTE = 75;
+    private static final int BEANS_PER_LATTE = 20;
+    private static final int COST_PER_LATTE = 7;
+    private static final int WATER_PER_CAPPUCCINO = 200;
+    private static final int MILK_PER_CAPPUCCINO = 100;
+    private static final int BEANS_PER_CAPPUCCINO = 12;
+    private static final int COST_PER_CAPPUCCINO = 6;
 
     public static void printStatus() {
         System.out.println("The coffee machine has:");
@@ -39,39 +39,39 @@ public class CoffeeMachine {
         }
         switch (typeOfCoffee) {
             case 1: // espresso
-                if (water < waterPerEspresso) {
+                if (water < WATER_PER_ESPRESSO) {
                     System.out.println("Sorry, not enough water!\n");
                     return false;
                 }
-                if (beans < beansPerEspresso) {
+                if (beans < BEANS_PER_ESPRESSO) {
                     System.out.println("Sorry, not enough beans!\n");
                     return false;
                 }
                 break;
             case 2: // latte
-                if (water < waterPerLatte) {
+                if (water < WATER_PER_LATTE) {
                     System.out.println("Sorry, not enough water\n");
                     return false;
                 }
-                if (milk < milkPerLatte) {
+                if (milk < MILK_PER_LATTE) {
                     System.out.println("Sorry, not enough milk!\n");
                     return false;
                 }
-                if (beans < beansPerLatte) {
+                if (beans < BEANS_PER_LATTE) {
                     System.out.println("Sorry, not enough beans!\n");
                     return false;
                 }
                 break;
             case 3: // cappuccino
-                if (water < waterPerCappuccino) {
+                if (water < WATER_PER_CAPPUCCINO) {
                     System.out.println("Sorry, not enough water!\n");
                     return false;
                 }
-                if (milk < milkPerCappuccino) {
+                if (milk < MILK_PER_CAPPUCCINO) {
                     System.out.println("Sorry, not enough milk!\n");
                     return false;
                 }
-                if (beans < beansPerCappuccino) {
+                if (beans < BEANS_PER_CAPPUCCINO) {
                     System.out.println("Sorry, not enough beans!\n");
                     return false;
                 }
@@ -89,23 +89,23 @@ public class CoffeeMachine {
                 switch (typeOfCoffee) {
                     case 1: // espresso
                         cups--;
-                        water -= waterPerEspresso;
-                        beans -= beansPerEspresso;
-                        money += costPerEspresso;
+                        water -= WATER_PER_ESPRESSO;
+                        beans -= BEANS_PER_ESPRESSO;
+                        money += COST_PER_ESPRESSO;
                         break;
                     case 2: // latte
                         cups--;
-                        water -= waterPerLatte;
-                        milk -= milkPerLatte;
-                        beans -= beansPerLatte;
-                        money += costPerLatte;
+                        water -= WATER_PER_LATTE;
+                        milk -= MILK_PER_LATTE;
+                        beans -= BEANS_PER_LATTE;
+                        money += COST_PER_LATTE;
                         break;
                     case 3: // cappuccino:
                         cups--;
-                        water -= waterPerCappuccino;
-                        milk -= milkPerCappuccino;
-                        beans -= beansPerCappuccino;
-                        money += costPerCappuccino;
+                        water -= WATER_PER_CAPPUCCINO;
+                        milk -= MILK_PER_CAPPUCCINO;
+                        beans -= BEANS_PER_CAPPUCCINO;
+                        money += COST_PER_CAPPUCCINO;
                         break;
                 }
             }
