@@ -22,6 +22,7 @@
             <option value="$PROJECT_DIR$/Problems/Boxes" />
             <option value="$PROJECT_DIR$/Problems/Calculating factorials" />
             <option value="$PROJECT_DIR$/Problems/Cats are robots" />
+            <option value="$PROJECT_DIR$/Problems/Check sudoku" />
             <option value="$PROJECT_DIR$/Problems/Check the given numbers are different" />
             <option value="$PROJECT_DIR$/Problems/Check the value" />
             <option value="$PROJECT_DIR$/Problems/Chocolate" />
@@ -51,6 +52,7 @@
             <option value="$PROJECT_DIR$/Problems/Javadoc comment" />
             <option value="$PROJECT_DIR$/Problems/Leap year" />
             <option value="$PROJECT_DIR$/Problems/Points on the 2D plane" />
+            <option value="$PROJECT_DIR$/Problems/Pretty looking pattern" />
             <option value="$PROJECT_DIR$/Problems/Printing a magic letter" />
             <option value="$PROJECT_DIR$/Problems/Printing each word in a new line" />
             <option value="$PROJECT_DIR$/Problems/Printing only the longest line" />
@@ -62,6 +64,7 @@
             <option value="$PROJECT_DIR$/Problems/Simulating a clock" />
             <option value="$PROJECT_DIR$/Problems/Size of parts" />
             <option value="$PROJECT_DIR$/Problems/Snail" />
+            <option value="$PROJECT_DIR$/Problems/Spiral" />
             <option value="$PROJECT_DIR$/Problems/Squares of natural numbers" />
             <option value="$PROJECT_DIR$/Problems/Test learners" />
             <option value="$PROJECT_DIR$/Problems/The (un)-ordered sequence" />
